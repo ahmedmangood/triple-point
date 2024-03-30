@@ -1,0 +1,13 @@
+{
+  "NavbarLinks": {
+    "logoTitle": "Triple Point",
+    "home": "Home",
+    "about": "About",
+    "contact": "Contact",
+    "services": "Services",
+    "projects": "Projects"
+  },
+  "Hero": {
+    "title": "Hello World"
+  }
+}
