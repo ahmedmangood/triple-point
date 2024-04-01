@@ -14,6 +14,7 @@ function AboutSection() {
             <p className="text-4xl font-extrabold text-start leading-[60px]">
               Providing Your Business With A Quality IT Service is Our Passion
             </p>
+
             <Button
               asChild
               className="bg-blue-500 font-bold hover:bg-blue-400 hover:no-underline"

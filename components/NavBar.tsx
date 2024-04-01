@@ -91,12 +91,12 @@ function NavBar() {
                       className=" invert-[1] hover:invert-[.30] transition-all"
                     />
                   </DropdownMenuTrigger>
-                  <DropdownMenuContent>
+                  <DropdownMenuContent className="bg-white">
                     {NavbarLinks.map((link) => {
                       return (
                         <div key={link.id}>
                           <NextLink href={link.path}>
-                            <DropdownMenuItem className="cursor-pointer">
+                            <DropdownMenuItem className="cursor-pointer hover:bg-gray-100 border-b-2 border-gray-100">
                               {link.name}
                             </DropdownMenuItem>
                           </NextLink>
@@ -118,8 +118,7 @@ function NavBar() {
               </div>
               <Button
                 asChild
-                className="hidden lg:flex"
-                variant={"destructive"}
+                className="hidden lg:flex bg-red-600 hover:bg-red-400 text-[17px] font-semibold"
               >
                 <NextLink href="/contact">{t("contact")}</NextLink>
               </Button>
