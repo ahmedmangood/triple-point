@@ -8,6 +8,55 @@
     "projects": "Projects"
   },
   "Hero": {
-    "title": "Hello World"
+    "title": "Driving Business Transformation",
+    "paragraph": "IT consulting and integrated services"
+  },
+  "Services-Section": {
+    "smallHeader": "what we provide?",
+    "mainHeader": "our services",
+    "readMore": "read more",
+    "AllServices": "All Services"
+  },
+  "Services": {
+    "serviceOne-title": "Numbering System",
+    "serviceOne-desc": "It is system that organizes the roles so that no crowding process occurs",
+    "serviceOne-itemOne": "The Kiosk device from this device is pulling the private number in the customer to wait his turn",
+    "serviceOne-itemTwo": "The Terminal device this device is at the empolyee and is used for the process of calling private number in the customer.",
+    "serviceOne-itemThree": "The 15 inch LCD Screen shows the number that was called so that the customer can know which of the empolyees to go to.",
+    "serviceOne-itemFour": "The Power Panel is a device through which all system devices are connected to it.",
+    "serviceTwo-title": "Access Control",
+    "serviceTwo-desc": "a system that controls entry and exit by card or fingerprint through a finger or face.",
+    "serviceThree-title": "CCTV System",
+    "serviceThree-desc": "TV Surveillance system by installing cameras and used for security",
+    "serviceFour-title": "Data Room",
+    "serviceFour-desc": "Special room collecting all data wires inside the cabinet.",
+    "serviceFive-title": "Intercome System",
+    "serviceFive-descOne": "It is an independent intercom device that is installed on the doors of homes, companies, bodies or villas, which is one of the forms of communication and communication systems between individuals.",
+    "serviceFive-descTwo": "Modern intercom devices depend on advanced IP technology and are installed by connecting them to some modern communication systems. Recently, intercom devices have begun to spread in buildings, residential villas and companies of all kinds and in small and large organizations and institutions.",
+    "serviceSix-title": "Modern Centeral",
+    "serviceSix-desc": "The centeral or switchboard is the cornerstone in creating a unified communications system",
+    "serviceSix-slugOne": "Establishing a modern centeral or exchange with IP-PBX technology",
+    "serviceSix-itemOne-title": "Voice over internet phones (IP Phones)",
+    "serviceSix-itemOne-desc": "Choosing the right type of phone for your work environment is the most important step in buying these phones",
+    "serviceSix-itemTwo-title": "Devices that convert analog phones to VOIP phones",
+    "serviceSix-itemThree-title": "Conferencing system",
+    "serviceSix-itemThree-desc": "With the development sof communications, holding meetings is not dependent on personal attendance in one place, but it has become possible to hold meetings remotely via the internet, where you can meet with all your company branches around the world with ease, whether by video or audio only, and remote meeting systems are considered one of the main components of any unified communications system.",
+    "serviceSix-itemFour-title": "security system",
+    "serviceSix-itemFour-desc": "The last part, which is no less important than the previous ones, is protection, where you can connect Surveillance cameras, intercome devices, and even time attendance devices with your centeral.",
+    "serviceSeven-title": "smart home",
+    "serviceSeven-desc": "It is to link the various devices and systems in the house together so that they can all be controlled from anywhere, and there are devices that the smart home system depends on, including smart switches that replace traditional electrical switches, smart sensors, and others.",
+    "serviceEight-title": "Video Wall",
+    "serviceEight-desc": "Special multi-screen setup that consists of multiple computer monitors, video projectors, or televisions lined up side-by-side or interconnected to form one large screen, Typical display technologies include LCD panels, LED live view arrays, blended displays, laser projection screens, and backlit display cubes.",
+    "serviceNine-title": "Electrical Works",
+    "serviceNine-desc": "all the known electrical works such as lighting and electrical sockets and installing their own drums.",
+    "serviceTen-title": "FTTX Networks",
+    "serviceTen-desc": "While the fiber optic cabling systems are replacing the Copper cable and DSL KSA government has led this revolution on old generation of networks by assigning a huge budget for the replacement scenario in the coming years, We at Triple Point decided to utilize this business opportunity by taking the leadership as FTTX Networks Installer.",
+    "serviceTen-explain": "FTTX is extending the fiber optic outdoor cables from the FTD/FDH underground until termination of cables in the OSBs/ODBs/OTBs in the X premises, while X is: H = Home / O = Office / B = Building / V = Villa / M = Mobile",
+    "serviceEleven-title": "Marketing & Advertisment",
+    "serviceEleven-desc": "We provide outstanding solutions marketing and advertising field. We offer highly relevant services in graphic designs, videos, motion graphics and 3D videos, Beside photography services and events organizing such as exhibitions and conferences.",
+    "serviceEleven-itemOneTitle": "Graphic Designs",
+    "serviceEleven-itemOneDesc": "We create the complete corporate services profile with professionalism and creativity in style and design, and we adhere to the importance of pulling back and achieving the marketing goal, and creatively producing images, fonts, and colors.",
+    "serviceEleven-itemTwoTitle": "Websites & Applications",
+    "serviceEleven-itemTwoDesc": "Web sites & Applications: We provide web services and designs, may it be Static or dinamic websites programming, web markets, providing ticket booking services, also we provide Mobile Applications designing and programing, besid domain, websites and cloud hosting services and plans."
   }
 }

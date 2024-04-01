@@ -2,18 +2,27 @@ import "../globals.css";
 import "aos/dist/aos.css";
 
 import type { Metadata } from "next";
-import { Noto_Kufi_Arabic, Poppins } from "next/font/google";
+import { Dosis, Noto_Kufi_Arabic, Poppins } from "next/font/google";
 import { notFound } from "next/navigation";
 import { NextIntlClientProvider } from "next-intl";
 import AousAnimation from "@/components/aosAnimation";
 import NextTopLoader from "nextjs-toploader";
 import NavBar from "@/components/NavBar";
 
-const poppins = Poppins({
+// const poppins = Poppins({
+//   subsets: ["latin"],
+//   display: "swap",
+//   variable: "--font-poppins",
+//   weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
+//   style: "normal",
+//   preload: true,
+// });
+
+const dosis = Dosis({
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-poppins",
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
+  variable: "--font-dosis",
+  weight: ["200", "300", "400", "500", "600", "700", "800"],
   style: "normal",
   preload: true,
 });
@@ -49,7 +58,7 @@ export default async function LocaleLayout({
 
   return (
     <html
-      className={locale === "ar" ? notoKufiArabic.className : poppins.className}
+      className={locale === "ar" ? notoKufiArabic.className : dosis.className}
       lang={locale}
       dir={locale === "ar" ? "rtl" : "ltr"}
     >
