@@ -8,7 +8,7 @@
     "projects": "Projects"
   },
   "Hero": {
-    "title": "Driving the adoption of new technologies",
+    "title": "Empowering businesses through modern technology",
     "paragraph": "IT consulting and integrated services"
   },
   "Services-Section": {
@@ -58,5 +58,10 @@
     "serviceEleven-itemOneDesc": "We create the complete corporate services profile with professionalism and creativity in style and design, and we adhere to the importance of pulling back and achieving the marketing goal, and creatively producing images, fonts, and colors.",
     "serviceEleven-itemTwoTitle": "Websites & Applications",
     "serviceEleven-itemTwoDesc": "Web sites & Applications: We provide web services and designs, may it be Static or dinamic websites programming, web markets, providing ticket booking services, also we provide Mobile Applications designing and programing, besid domain, websites and cloud hosting services and plans."
+  },
+  "AboutSection": {
+    "headingOne": "About Our Company",
+    "headingTwo": "Providing Your Business With A Quality IT Service is Our Passion",
+    "learnBtn": "Learn More About Us"
   }
 }
