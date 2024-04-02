@@ -21,46 +21,42 @@ function ServicesSection() {
     {
       id: 1,
       title: t2("serviceOne-title"),
-      icon: <FaPeopleGroup className="text-[50px] text-[#ff561d] mb-5" />,
+      icon: "discrimination.gif",
       description: t2("serviceOne-desc"),
       path: "#",
     },
     {
       id: 2,
       title: t2("serviceTwo-title"),
-      icon: <TbLockAccess className="text-[50px] text-[#ff561d] mb-5 " />,
+      icon: "anti-theft.gif",
       description: t2("serviceTwo-desc"),
       path: "#",
     },
     {
       id: 3,
       title: t2("serviceThree-title"),
-      icon: <BiCctv className="text-[50px] text-[#ff561d] mb-5" />,
+      icon: "camera.gif",
       description: t2("serviceThree-desc"),
       path: "#",
     },
     {
       id: 4,
       title: t2("serviceFour-title"),
-      icon: (
-        <VscServerEnvironment className="text-[50px] text-[#ff561d] mb-5" />
-      ),
+      icon: "server.gif",
       description: t2("serviceFour-desc"),
       path: "#",
     },
     {
       id: 5,
       title: t2("serviceNine-title"),
-      icon: (
-        <RiLightbulbFlashLine className="text-[50px] text-[#ff561d] mb-5" />
-      ),
+      icon: "idea.gif",
       description: t2("serviceNine-desc"),
       path: "#",
     },
     {
       id: 6,
       title: t2("serviceTen-title"),
-      icon: <MdCable className="text-[50px] text-[#ff561d] mb-5" />,
+      icon: "internet.png",
       description: t2("serviceTen-desc"),
       path: "#",
     },
@@ -80,7 +76,12 @@ function ServicesSection() {
                 className="bg-white shadow-md hover:shadow-2xl transition-shadow rounded-md flex flex-col items-start justify-center py-[40px] px-[20px] gap-3 p-4 mb-4"
               >
                 {/* <MdElectricBolt  /> */}
-                {service.icon}
+                <Image
+                  src={`/gifs/${service.icon}`}
+                  alt={"icon"}
+                  width={70}
+                  height={70}
+                />
                 <h3 className="font-bold text-xl">{service.title}</h3>
                 <p className="text-[17px] text-gray-600 text-start">
                   {service.description.length > 105
