@@ -2,8 +2,10 @@
 
 import { useLocale } from "next-intl";
 // import { usePathname, useRouter } from "next/navigation";
-import { ChangeEvent, useTransition } from "react";
-import { useRouter, usePathname } from "next-intl/client";
+import { useTransition } from "react";
+// import { useRouter, usePathname } from "next-intl";
+import { usePathname, useRouter } from "./navigation";
+
 import Image from "next/image";
 function LocaleSwitcher() {
   const [isPending, startTransition] = useTransition();
@@ -19,20 +21,6 @@ function LocaleSwitcher() {
 
   return (
     <>
-      {/* <select
-        defaultValue={localeActive}
-        onChange={onSelecting}
-        disabled={isPending}
-        className="bg-transparent rounded-md border-2 border-gray-400 p-1"
-      >
-        <option value="ar" className="text-black">
-          اللغة العربية
-        </option>
-
-        <option value="en" className="text-black">
-          English
-        </option>
-      </select> */}
       <div className="flex items-center justify-center gap-1 space-x-2 ">
         <button
           onClick={() => onSelecting("en")}
