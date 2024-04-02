@@ -25,7 +25,7 @@ export const pathnames = {
     en: "/services",
     ar: "/services",
   },
-  projects: {
+  "/projects": {
     en: "/projects",
     ar: "/projects",
   },

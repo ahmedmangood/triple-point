@@ -63,5 +63,21 @@
     "headingOne": "About Our Company",
     "headingTwo": "Providing Your Business With A Quality IT Service is Our Passion",
     "learnBtn": "Learn More About Us"
+  },
+  "OverviewSection": {
+    "headingOne": "WHY CHOOSE US?",
+    "headingTwo": "At Triple Point, we guarantee efficiency and quality in executing your project. ",
+    "contactSlug": "Start contact with us now to get answers to your questions",
+    "contactBtn": "Contact Now?"
+  },
+  "benefits": {
+    "viewOne": "Expertise",
+    "viewTwo": "Innovation",
+    "viewThree": "Quality",
+    "viewFour": "Collaboration",
+    "viewFive": "Efficiency",
+    "viewSix": "Flexibility",
+    "viewSeven": "Transparency",
+    "viewEight": "Competitive pricing"
   }
 }

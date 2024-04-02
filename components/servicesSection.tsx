@@ -28,7 +28,7 @@ function ServicesSection() {
     {
       id: 2,
       title: t2("serviceTwo-title"),
-      icon: <TbLockAccess className="text-[50px] text-[#ff561d] mb-5" />,
+      icon: <TbLockAccess className="text-[50px] text-[#ff561d] mb-5 " />,
       description: t2("serviceTwo-desc"),
       path: "#",
     },

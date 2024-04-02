@@ -12,6 +12,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { Button } from "./ui/button";
 import LocaleSwitcher from "./localeSwitcher";
+import { useEffect } from "react";
 
 function NavBar() {
   const pathName = usePathname();
@@ -39,6 +40,9 @@ function NavBar() {
     },
   ];
 
+  useEffect(() => {
+    console.log(pathName);
+  }, []);
   return (
     <nav className=" text-white fixed w-full top-[0px] z-10 bg-gradient-to-r from-[#053a7f] to-[#002049] shadow-2xl border-b-2 border-gray-300 ">
       <div className="container">
@@ -66,8 +70,8 @@ function NavBar() {
                     <NextLink
                       href={link.path}
                       passHref
-                      className={`text-white text-[18px] hover:text-accent-foreground transition-colors ${
-                        pathName === link.path ? "text-accent-foreground" : ""
+                      className={`text-white rtl:text-[14px] text-[20px] font-semibold hover:text-gray-400 transition-colors ${
+                        pathName === link.path ? "text-gray-400" : ""
                       }`}
                     >
                       {link.name}
