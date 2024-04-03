@@ -81,6 +81,7 @@ function ServicesSection() {
                   alt={"icon"}
                   width={70}
                   height={70}
+                  unoptimized
                 />
                 <h3 className="font-bold text-xl">{service.title}</h3>
                 <p className="text-[17px] text-gray-600 text-start">

@@ -13,22 +13,10 @@ export const pathnames = {
   "/": "/",
   // If locales use different paths, you can
   // specify each external path per locale.
-  "/about": {
-    en: "/about",
-    ar: "/about",
-  },
-  "/contact": {
-    en: "/contact",
-    ar: "/contact",
-  },
-  "/services": {
-    en: "/services",
-    ar: "/services",
-  },
-  "/projects": {
-    en: "/projects",
-    ar: "/projects",
-  },
+  "/about": "/about",
+  "/contact": "/contact",
+  "/services": "/services",
+  "/projects": "/projects",
 } satisfies Pathnames<typeof locales>;
 
 export const { Link, redirect, usePathname, useRouter } =

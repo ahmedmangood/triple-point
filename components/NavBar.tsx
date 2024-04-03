@@ -2,7 +2,7 @@
 import Image from "next/image";
 import NextLink from "next/link";
 import { useTranslations } from "next-intl";
-import { usePathname } from "next/navigation";
+
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -12,37 +12,11 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { Button } from "./ui/button";
 import LocaleSwitcher from "./localeSwitcher";
-import { useEffect } from "react";
+import { Link, usePathname } from "./navigation";
 
 function NavBar() {
-  const pathName = usePathname();
+  const currentPathName = usePathname();
   const t = useTranslations("NavbarLinks");
-  const NavbarLinks = [
-    {
-      id: 1,
-      name: t("home"),
-      path: "/",
-    },
-    {
-      id: 2,
-      name: t("about"),
-      path: "/about",
-    },
-    {
-      id: 3,
-      name: t("services"),
-      path: "/services",
-    },
-    {
-      id: 4,
-      name: t("projects"),
-      path: "/projects",
-    },
-  ];
-
-  useEffect(() => {
-    console.log(pathName);
-  }, []);
   return (
     <nav className=" text-white fixed w-full top-[0px] z-10 bg-gradient-to-r from-[#053a7f] to-[#002049] shadow-2xl border-b-2 border-gray-300 ">
       <div className="container">
@@ -63,23 +37,46 @@ function NavBar() {
             </h3>
           </NextLink>
           <ul className="hidden lg:flex items-center justify-center ltr:space-x-10">
-            {NavbarLinks.map((link) => {
-              return (
-                <div key={link.id}>
-                  <li className="rtl:pe-4 rtl:ps-4">
-                    <NextLink
-                      href={link.path}
-                      passHref
-                      className={`text-white rtl:text-[14px] text-[20px] font-semibold hover:text-gray-400 transition-colors ${
-                        pathName === link.path ? "text-gray-400" : ""
-                      }`}
-                    >
-                      {link.name}
-                    </NextLink>
-                  </li>
-                </div>
-              );
-            })}
+            <li className="rtl:pe-4 rtl:ps-4">
+              <Link
+                href={"/"}
+                className={`text-white rtl:text-[14px] text-[20px] font-semibold hover:text-gray-400 transition-colors ${
+                  currentPathName === "/" ? "text-gray-500" : ""
+                }`}
+              >
+                {t("home")}
+              </Link>
+            </li>
+            <li className="rtl:pe-4 rtl:ps-4">
+              <Link
+                href={"/about"}
+                className={`text-white rtl:text-[14px] text-[20px] font-semibold hover:text-gray-400 transition-colors ${
+                  currentPathName === "/about" ? "text-gray-500" : ""
+                }`}
+              >
+                {t("about")}
+              </Link>
+            </li>
+            <li className="rtl:pe-4 rtl:ps-4">
+              <Link
+                href={"/services"}
+                className={`text-white rtl:text-[14px] text-[20px] font-semibold hover:text-gray-400 transition-colors ${
+                  currentPathName === "/services" ? "text-gray-500" : ""
+                }`}
+              >
+                {t("services")}
+              </Link>
+            </li>
+            <li className="rtl:pe-4 rtl:ps-4">
+              <Link
+                href={"/projects"}
+                className={`text-white rtl:text-[14px] text-[20px] font-semibold hover:text-gray-400 transition-colors ${
+                  currentPathName === "/projects" ? "text-gray-500" : ""
+                }`}
+              >
+                {t("projects")}
+              </Link>
+            </li>
           </ul>
           <div className="flex items-center justify-center">
             {/* Start DropDown Menu */}
@@ -96,18 +93,43 @@ function NavBar() {
                     />
                   </DropdownMenuTrigger>
                   <DropdownMenuContent className="bg-white">
-                    {NavbarLinks.map((link) => {
-                      return (
-                        <div key={link.id}>
-                          <NextLink href={link.path}>
-                            <DropdownMenuItem className="cursor-pointer hover:bg-gray-100 border-b-2 border-gray-100">
-                              {link.name}
-                            </DropdownMenuItem>
-                          </NextLink>
-                          <DropdownMenuSeparator />
-                        </div>
-                      );
-                    })}
+                    <Link href={"/"}>
+                      <DropdownMenuItem
+                        className={`cursor-pointer hover:bg-gray-100 border-b-2 border-gray-100 ${
+                          currentPathName === "/" ? "bg-gray-200" : ""
+                        }`}
+                      >
+                        {t("home")}
+                      </DropdownMenuItem>
+                    </Link>
+                    <Link href={"/about"}>
+                      <DropdownMenuItem
+                        className={`cursor-pointer hover:bg-gray-100 border-b-2 border-gray-100 ${
+                          currentPathName === "/about" ? "bg-gray-200" : ""
+                        }`}
+                      >
+                        {t("about")}
+                      </DropdownMenuItem>
+                    </Link>
+                    <Link href={"/services"}>
+                      <DropdownMenuItem
+                        className={`cursor-pointer hover:bg-gray-100 border-b-2 border-gray-100 ${
+                          currentPathName === "/services" ? "bg-gray-200" : ""
+                        }`}
+                      >
+                        {t("services")}
+                      </DropdownMenuItem>
+                    </Link>
+                    <Link href={"/projects"}>
+                      <DropdownMenuItem
+                        className={`cursor-pointer hover:bg-gray-100 border-b-2 border-gray-100 ${
+                          currentPathName === "/projects" ? "bg-gray-200" : ""
+                        }`}
+                      >
+                        {t("projects")}
+                      </DropdownMenuItem>
+                    </Link>
+                    <DropdownMenuSeparator />
                   </DropdownMenuContent>
                 </DropdownMenu>
               </div>
@@ -124,7 +146,7 @@ function NavBar() {
                 asChild
                 className="hidden lg:flex bg-red-600 hover:bg-red-400 text-[17px] font-semibold"
               >
-                <NextLink href="/contact">{t("contact")}</NextLink>
+                <Link href="/contact">{t("contact")}</Link>
               </Button>
             </div>
           </div>

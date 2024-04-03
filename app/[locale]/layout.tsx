@@ -9,15 +9,6 @@ import AousAnimation from "@/components/aosAnimation";
 import NextTopLoader from "nextjs-toploader";
 import NavBar from "@/components/NavBar";
 
-// const poppins = Poppins({
-//   subsets: ["latin"],
-//   display: "swap",
-//   variable: "--font-poppins",
-//   weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
-//   style: "normal",
-//   preload: true,
-// });
-
 const dosis = Dosis({
   subsets: ["latin"],
   display: "swap",

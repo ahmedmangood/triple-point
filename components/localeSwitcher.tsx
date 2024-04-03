@@ -26,7 +26,9 @@ function LocaleSwitcher() {
           onClick={() => onSelecting("en")}
           disabled={isPending}
           className={`${
-            localeActive === "en" ? "bg-gray-300" : "bg-transparent"
+            localeActive === "en"
+              ? "border-2 border-gray-300"
+              : "bg-transparent"
           } rounded-md p-1`}
         >
           <Image src={"/flags/en.svg"} alt="arabic" width={25} height={25} />
@@ -36,8 +38,10 @@ function LocaleSwitcher() {
           onClick={() => onSelecting("ar")}
           disabled={isPending}
           className={`${
-            localeActive === "ar" ? "bg-gray-300" : "bg-transparent"
-          } rounded-md p-1 font-extrabold`}
+            localeActive === "ar"
+              ? "border-2 border-gray-300"
+              : "bg-transparent"
+          } rounded-md p-1`}
         >
           <Image src={"/flags/ar.png"} alt="arabic" width={25} height={25} />
         </button>
