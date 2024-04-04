@@ -8,6 +8,7 @@ import { NextIntlClientProvider } from "next-intl";
 import AousAnimation from "@/components/aosAnimation";
 import NextTopLoader from "nextjs-toploader";
 import NavBar from "@/components/NavBar";
+import Footer from "@/components/Footer";
 
 const dosis = Dosis({
   subsets: ["latin"],
@@ -60,6 +61,7 @@ export default async function LocaleLayout({
             <NavBar />
           </header>
           <AousAnimation>{children}</AousAnimation>
+          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>

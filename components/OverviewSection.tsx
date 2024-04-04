@@ -1,47 +1,73 @@
-import Image from "next/image";
 import React from "react";
-import { Button } from "./ui/button";
-import Link from "next/link";
 import { useTranslations } from "next-intl";
-import { PhoneCall } from "lucide-react";
+import { BsCurrencyDollar } from "react-icons/bs";
+import Image from "next/image";
 
 function OverviewSection() {
   const t = useTranslations("OverviewSection");
+  const t2 = useTranslations("benefits");
+  const benefits = [
+    {
+      id: 1,
+      title: t2("viewOne"),
+      description: t2("viewOne-desc"),
+      icon: "reputationOne.png",
+    },
+    {
+      id: 2,
+      title: t2("viewTwo"),
+      description: t2("viewTwo-desc"),
+      icon: "innovation.png",
+    },
+    {
+      id: 3,
+      title: t2("viewThree"),
+      description: t2("viewThree-desc"),
+      icon: "reliability.png",
+    },
+    {
+      id: 4,
+      title: t2("viewFour"),
+      description: t2("viewFour-desc"),
+      icon: "satisfaction.png",
+    },
+    {
+      id: 5,
+      title: t2("viewFive"),
+      description: t2("viewFive-desc"),
+      icon: "creativity.png",
+    },
+  ];
   return (
-    <section className="py-10 my-10 bg-gray-200">
+    <section className="py-10 my-10 ">
       <div className="container">
-        <div className="flex flex-col lg:flex-row-reverse items-center justify-center gap-10">
-          <div className="w-full lg:w-[50%] flex flex-col items-start justify-center gap-6">
-            <h2 className="font-bold text-2xl text-yellowColor">
-              {t("headingOne")}
-            </h2>
-            <p className="text-4xl font-extrabold text-start leading-[60px]">
-              {t("headingTwo")}
-            </p>
-            <span className="text-[18px]">{t("contactSlug")}</span>
-            <Button
-              asChild
-              className="bg-red-500 hover:bg-red-400 hover:no-underline font-bold p-6 shadow-xl mt-5 flex items-center justify-center gap-2"
-              variant={"link"}
-            >
-              <Link
-                href={"/contact"}
-                className="text-white no-underline text-[17px] ltr:text-[18px]"
-              >
-                {t("contactBtn")}
-                <PhoneCall />
-              </Link>
-            </Button>
-          </div>
-          <div className="w-full lg:w-[50%]">
-            <Image
-              src="/photos/overview.jpg"
-              alt="about"
-              width={500}
-              height={500}
-              className="rounded"
-            />
-          </div>
+        <div className="">
+          <h2 className="font-bold text-2xl text-yellowColor mb-8">
+            {t("headingOne")}
+          </h2>
+          <p className="text-2xl lg:text-4xl font-extrabold leading-[50px]">
+            {t("headingTwo")}
+          </p>
+        </div>
+        <div className="my-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-2">
+          {benefits.map((benefit) => {
+            return (
+              <div className="bg-gray-100 shadow-md  rounded-md flex flex-row-reverse items-start justify-center py-[40px] px-[20px] gap-5 p-4 mb-4 mx-2 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-gray-200 duration-500">
+                <div className="w-full flex flex-col items-start justify-center gap-3">
+                  <h3 className="text-xl font-bold">{benefit.title}</h3>
+                  <p className="text-[17px] text-gray-600 text-start ">
+                    {benefit.description}
+                  </p>
+                </div>
+                <Image
+                  src={`/icons/${benefit.icon}`}
+                  alt={"icon"}
+                  width={70}
+                  height={70}
+                />
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>

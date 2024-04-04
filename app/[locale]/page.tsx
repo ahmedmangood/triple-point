@@ -9,8 +9,8 @@ export default function Home() {
     <main className="text-center">
       <Hero />
       <ServicesSection />
-      <OverviewSection />
       <AboutSection />
+      <OverviewSection />
       <Banner />
     </main>
   );

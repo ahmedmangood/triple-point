@@ -9,7 +9,9 @@
   },
   "Hero": {
     "title": "Empowering businesses through modern technology",
-    "paragraph": "IT consulting and integrated services"
+    "paragraph": "IT consulting and integrated services",
+    "slug": "Your Trusted Partner for Advanced Solutions",
+    "welcome": "Welcome to "
   },
   "Services-Section": {
     "smallHeader": "what we provide?",
@@ -68,16 +70,25 @@
     "headingOne": "WHY CHOOSE US?",
     "headingTwo": "At Triple Point, we guarantee efficiency and quality in executing your project. ",
     "contactSlug": "Start contact with us now to get answers to your questions",
+    "whoWeAre": "we specialize in providing a wide range of cutting-edge solutions to meet the diverse needs of our clients. Our services encompass various sectors, including Numbering or Queuing System, Access Control, CCTV System, Data Room, Intercom System, Modern Central, Security System, Smart Home, FTTX Network, Marketing & Advertisement, and Electrical Works. With our expertise and dedication to excellence, we strive to deliver innovative solutions that enhance efficiency, security, and connectivity for our clients",
     "contactBtn": "Contact Now?"
   },
   "benefits": {
     "viewOne": "Expertise",
+    "viewOne-desc": "Our team comprises highly skilled professionals with extensive experience in their respective fields, ensuring the highest quality of service and expertise.",
     "viewTwo": "Innovation",
-    "viewThree": "Quality",
-    "viewFour": "Collaboration",
-    "viewFive": "Efficiency",
-    "viewSix": "Flexibility",
-    "viewSeven": "Transparency",
-    "viewEight": "Competitive pricing"
+    "viewTwo-desc": "We stay abreast of the latest technological advancements and industry trends, allowing us to deliver innovative solutions that meet the evolving needs of our clients.",
+    "viewThree": "Reliability",
+    "viewThree-desc": "We are committed to delivering reliable and dependable solutions, backed by meticulous planning, thorough execution, and continuous support.",
+    "viewFour": "Customer Satisfaction",
+    "viewFour-desc": "We prioritize customer satisfaction and strive to exceed expectations with every project. Our dedicated team is always available to address any queries or concerns and provide prompt assistance.",
+    "viewFive": "Customization",
+    "viewFive-desc": "We understand that every client is unique, and we tailor our solutions to meet their specific requirements and preferences. From design to implementation, we work closely with our clients to deliver personalized solutions that align with their goals and objectives."
+  },
+  "banner": {
+    "headingOne": "Want To Contact With Us?",
+    "headingTwo": "Elevate Your Business with State-of-the-Art Technology Solutions",
+    "callBtn": "Call Us Now",
+    "contactBtn": "Contact With Us"
   }
 }

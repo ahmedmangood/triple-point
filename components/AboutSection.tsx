@@ -6,7 +6,7 @@ import { useTranslations } from "next-intl";
 function AboutSection() {
   const t = useTranslations("AboutSection");
   return (
-    <section className="py-10">
+    <section className="py-10 bg-gray-200">
       <div className="container">
         <div className="flex flex-col lg:flex-row items-center justify-center gap-10">
           <div className="w-full lg:w-[50%] flex flex-col items-start justify-center gap-6">
