@@ -29,9 +29,9 @@ const notoKufiArabic = Noto_Kufi_Arabic({
 });
 
 export const metadata: Metadata = {
-  title: "Delta Med",
+  title: "Triple Point",
   description:
-    "Delta Med Global Contracting - A Self-Performing General Contractor Focused on Highly Complex and Technical Projects ",
+    "Triple Point Empowering businesses through modern technology - IT consulting and integrated services ",
 };
 
 export default async function LocaleLayout({
