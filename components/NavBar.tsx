@@ -20,7 +20,7 @@ function NavBar() {
   return (
     <nav className=" text-white fixed w-full top-[0px] z-10 bg-gradient-to-r from-[#053a7f] to-[#002049] shadow-2xl border-b-2 border-gray-300 ">
       <div className="container">
-        <div className="flex justify-between items-center h-20">
+        <div className="flex justify-between items-center h-20 flex-wrap">
           <NextLink
             href={"/"}
             className="flex items-center space-x-2 rtl:flex-col"

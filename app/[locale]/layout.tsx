@@ -5,7 +5,6 @@ import type { Metadata } from "next";
 import { Dosis, Noto_Kufi_Arabic, Poppins } from "next/font/google";
 import { notFound } from "next/navigation";
 import { NextIntlClientProvider } from "next-intl";
-import AousAnimation from "@/components/aosAnimation";
 import NextTopLoader from "nextjs-toploader";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
@@ -60,7 +59,7 @@ export default async function LocaleLayout({
           <header>
             <NavBar />
           </header>
-          <AousAnimation>{children}</AousAnimation>
+          {children}
           <Footer />
         </NextIntlClientProvider>
       </body>

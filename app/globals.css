@@ -5,3 +5,7 @@
 :root {
   --yellow-color: #ff9800;
 }
+
+html {
+  scroll-behavior: smooth;
+}
