@@ -1,4 +1,5 @@
 import { mainLinks, projectsLinks, servicesLinks } from "@/context";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -10,6 +11,7 @@ import {
 } from "react-icons/fa6";
 
 function Footer() {
+  const t = useTranslations("footer");
   const socialMedia = [
     {
       id: 1,
@@ -48,10 +50,7 @@ function Footer() {
             );
           })}
         </section>
-        <section className="text-lg container">
-          We stay at the forefront of global technological trends to transform
-          your business processes{" "}
-        </section>
+        <section className="text-lg container text-center">{t("slug")}</section>
         <section className="flex items-start gap-10 lg:gap-28 flex-wrap">
           <div className="flex flex-col">
             <h4 className="font-bold text-xl mb-3">Company</h4>
@@ -92,7 +91,7 @@ function Footer() {
         </section>
       </div>
       <section className="bg-blue-900 text-center text-white py-4">
-        © 2023 Copyright: <span className="font-bold">Triple Point</span>
+        {t("copyright")} <span className="font-bold">Triple Point</span>
       </section>
     </footer>
   );

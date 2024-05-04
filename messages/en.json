@@ -90,5 +90,9 @@
     "headingTwo": "Elevate Your Business with State-of-the-Art Technology Solutions",
     "callBtn": "Call Us Now",
     "contactBtn": "Contact With Us"
+  },
+  "footer": {
+    "slug": "We stay at the forefront of global technological trends to transform your business processes",
+    "copyright": "Copyright © 2024"
   }
 }
