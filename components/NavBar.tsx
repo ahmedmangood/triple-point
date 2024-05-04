@@ -13,10 +13,16 @@ import {
 import { Button } from "./ui/button";
 import LocaleSwitcher from "./localeSwitcher";
 import { Link, usePathname } from "./navigation";
+import { useEffect } from "react";
 
 function NavBar() {
   const currentPathName = usePathname();
   const t = useTranslations("NavbarLinks");
+
+  useEffect(() => {
+    console.log(currentPathName);
+  }, []);
+
   return (
     <nav className=" text-white fixed w-full top-[0px] z-10 bg-gradient-to-r from-[#053a7f] to-[#002049] shadow-2xl border-b-2 border-gray-300 ">
       <div className="container">
@@ -40,8 +46,8 @@ function NavBar() {
             <li className="rtl:pe-4 rtl:ps-4">
               <Link
                 href={"/"}
-                className={`text-white rtl:text-[14px] text-[20px] font-semibold hover:text-gray-400 transition-colors ${
-                  currentPathName === "/" ? "text-gray-500" : ""
+                className={`text-white rtl:text-[14px] text-[20px] font-semibold hover:text-red-500 transition-colors ${
+                  currentPathName === "/" ? "text-red-500" : ""
                 }`}
               >
                 {t("home")}
@@ -50,8 +56,8 @@ function NavBar() {
             <li className="rtl:pe-4 rtl:ps-4">
               <Link
                 href={"/about"}
-                className={`text-white rtl:text-[14px] text-[20px] font-semibold hover:text-gray-400 transition-colors ${
-                  currentPathName === "/about" ? "text-gray-500" : ""
+                className={`text-white rtl:text-[14px] text-[20px] font-semibold hover:text-red-500 transition-colors ${
+                  currentPathName === "/about" ? "text-red-500" : ""
                 }`}
               >
                 {t("about")}
@@ -60,8 +66,8 @@ function NavBar() {
             <li className="rtl:pe-4 rtl:ps-4">
               <Link
                 href={"/services"}
-                className={`text-white rtl:text-[14px] text-[20px] font-semibold hover:text-gray-400 transition-colors ${
-                  currentPathName === "/services" ? "text-gray-500" : ""
+                className={`text-white rtl:text-[14px] text-[20px] font-semibold hover:text-red-500 transition-colors ${
+                  currentPathName === "/services" ? "text-red-500" : ""
                 }`}
               >
                 {t("services")}
@@ -70,8 +76,8 @@ function NavBar() {
             <li className="rtl:pe-4 rtl:ps-4">
               <Link
                 href={"/projects"}
-                className={`text-white rtl:text-[14px] text-[20px] font-semibold hover:text-gray-400 transition-colors ${
-                  currentPathName === "/projects" ? "text-gray-500" : ""
+                className={`text-white rtl:text-[14px] text-[20px] font-semibold hover:text-red-500 transition-colors ${
+                  currentPathName === "/projects" ? "text-red-500" : ""
                 }`}
               >
                 {t("projects")}
