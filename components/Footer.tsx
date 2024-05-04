@@ -48,11 +48,11 @@ function Footer() {
             );
           })}
         </section>
-        <section className="text-lg">
+        <section className="text-lg container">
           We stay at the forefront of global technological trends to transform
           your business processes{" "}
         </section>
-        <section className="flex items-start gap-28 flex-wrap">
+        <section className="flex items-start gap-10 lg:gap-28 flex-wrap">
           <div className="flex flex-col">
             <h4 className="font-bold text-xl mb-3">Company</h4>
             <ul className="flex flex-col items-start justify-center gap-1">
