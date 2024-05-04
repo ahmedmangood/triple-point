@@ -31,6 +31,9 @@ export const metadata: Metadata = {
   title: "Triple Point",
   description:
     "Triple Point Empowering businesses through modern technology - IT consulting and integrated services ",
+  verification: {
+    google: "_wwZLK5cIzbkVgU35JdIHF7PDfTPmWEoQSU9AQUDdGM",
+  },
 };
 
 export default async function LocaleLayout({
